@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking an external CSS stylesheet -->
+    <script src="https://kit.fontawesome.com/6e75e56ae3.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image.png" class="logo"> <!-- Logo image -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li> <!-- Navigation links -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- Header text -->
+            <div class="header-text">
+                <p>Full Stack Developer MERN</p>
+                <h1>Hi, This is <span>Hicham</span><br>From Casablanca,<br> Morocco</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile-pic (9).png"> <!-- Profile picture -->
+                </div> 
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Full Stack developer MERN, passionate about my work<br>
+                        and fully dedicated to get the job done.<br> creative mind and determine to achieve 
+                        my goals.</p>
+
+                    <!-- Tab navigation for different content sections -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- Content for the "Skills" tab -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br> Designing web/app interfaces</li>
+                            <li><span>Javascript</span><br> Expert in J.s libraries and frameworks
+                                    and able to build custom solutions</li>
+                            <li><span>back-end</span><br>Creating and managing application programming interfaces (APIs)</li>
+                        </ul>
+                    </div>        
+                    
+                    <!-- Content for the "Experience" tab -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Full stack developer freelancer</li>
+                            <li><span>2023</span><br>Introduction to full stack</li>
+                            <li><span>2022</span><br>Various experiences as interior designer</li>
+                        </ul>
+                    </div>
+
+                    <!-- Content for the "Education" tab -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Bootcamp full stack developer at Ark-x Academy, jobintech</li>
+                            <li><span>2016</span><br>Interior design masters at art'com sup</li>
+                            <li><span>2010</span><br>Bac pc</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">my services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web developer</h2>
+                    <p>
+                        building, and maintaining websites and web applications. This involves both front-end development, 
+                        which deals with the visual and user interface aspects of a website, and back-end development, 
+                        which involves creating the server-side logic, databases, and infrastructure that power the website's
+                         functionality. i use various programming languages, 
+                        frameworks, and tools to create functional and visually appealing online platforms that meet the needs of users and businesses.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Font end</h2>
+                    <p>
+                        focuses on creating the user interface and experience of websites and applications. 
+                        They design and build the visual elements that users interact with directly, using languages like HTML, CSS,
+                         and JavaScript. ensure that websites and apps are visually appealing, responsive, and user-friendly.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Back end</h2>
+                    <p>
+                         software specialist in building and maintaining the hidden server-side 
+                         components that make web applications and software
+                          systems work smoothly.i handle databases, logic,
+                         and communication between different parts of the software
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>                   
+        </div>
+    </div>
+<!------------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">my Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="roots.jpg">
+                <div class="layer">
+                    <h3>Kribnb</h3>
+                    <p>This is E-commerce website for a leather goods brand</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="kribnb.jpg">
+                <div class="layer">
+                    <h3>Kribnb</h3>
+                    <p>this is a property management for short term rental in Morocco</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Make it possible.jpg">
+                <div class="layer">
+                    <h3>Make it possible</h3>
+                    <p>This is a motivation webpage, to keep my dreams on.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+ 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contanct-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hichamouartassi@gmail.com</p>
+                <P><i class="fa-solid fa-mobile"></i> +212 654 930 785</P>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></i></a>
+                </div>
+                <a href="Hicham ouartassi Resume.pdf" download class="btn btn2">download my resume</a>
+            </div>
+            <div class="contanct-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="your Name" required>
+                <input type="email" name="email" placeholder="your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ouartassi inc. Made with <i class="fa-solid fa-fire"></i> by Hicham Ouartassi</p>
+    </div>
+</div>
+
+
+
+    <!-- JavaScript code to handle tab switching -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+     
+
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbxu2hiF8Hn1WaOWiWhKLXELjJ8BIQu0iAlLjBtNDShjymJ-AhPaX9Yx9n6r5vcMQOFL/exec>'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+      },5000)
+      form.reset()
+    
+      .catch(error => console.error('Error!', error.message))
+  })
+
+    </script>
+
+</body>
+</html>
